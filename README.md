@@ -7,8 +7,8 @@ It will also have a live feed for up to date sports data for live matches from a
 Clean updates will be using 2 apis to deliver this information to our users
 
 ## APIs
-News https://mediastack.com/
-Live Score https://livescore-api.com
+- News https://mediastack.com/
+- Live Score https://livescore-api.com
 
 ## Running the Project
 
