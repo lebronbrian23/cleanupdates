@@ -1,0 +1,20 @@
+extends layout
+
+block layout-content
+  h1 Latest news
+
+  div#general.row
+    div.row
+      each n in news.data
+          div.col-md-4.each-news
+            a(href=`${n.url}` target="_blank")
+              div.card
+                figure
+                  img.card-img-top(alt="" src=`${n.image === null ?'' : n.image}`)
+                  h4
+                    strong.wrap-2-lines #{n.title}
+                div.card-body
+                  p.card-text.wrap-3-lines #{n.description}
+                div
+                  span.pr-10 #{n.source}
+                  span #{n.published_at.slice(0,10)}

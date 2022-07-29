@@ -1,0 +1,84 @@
+
+/* Set the box-sizing property for the entire page so that
+ * width calculations include everything up until the
+ * border.
+ */
+html {
+    box-sizing:border-box; /* content-box is default */
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+body{
+    font-family: 'Helvetica Neue', serif;
+}
+.container-fluid {
+    padding: 2em;
+}
+
+.bg-purple {
+    min-height: 4rem;
+    background-color: #1d3a74;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+li > a{
+    color: white !important;
+}
+.active-link{
+    background: rgba(255, 255, 255, .15);
+}
+.match {
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.each-match{
+    border-bottom: 1px solid rgba(243, 238, 238, 0.98);
+    padding: 20px;
+}
+.team-name {
+}
+
+.team-name.right {
+    text-align: right;
+}
+
+.time-box,
+.score-box {
+    font-weight: bold;
+    text-align: center;
+}
+.each-news{
+    margin-bottom: 30px;
+}
+.card{
+    border: none;
+}
+.card-body{
+    padding: 0.5em !important;
+}
+.wrap-3-lines{
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}.wrap-2-lines {
+    -webkit-line-clamp: 2;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+}
+ .pr-10{
+     padding-right: 10px;
+ }
+
+

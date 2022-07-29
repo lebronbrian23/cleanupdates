@@ -1,0 +1,20 @@
+extends layout
+
+block layout-content
+  h1 Entertainment
+
+  div#entertainment.row
+    div.row
+      each n in news.data
+        div.col-md-4.each-news
+          a(href=`${n.url}` target="_blank")
+            div.card
+              figure
+                img(alt="" src=`${n.image}`).card-img-top
+                h4
+                  strong.wrap-2-lines #{n.title}
+              div.card-body
+                p.card-text.wrap-3-lines #{n.description}
+              div
+                span.pr-10 #{n.source}
+                span #{n.published_at.slice(0, 10)}

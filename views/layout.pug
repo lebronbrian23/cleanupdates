@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    title #{title} - Clean Updates
+    link(href="//db.onlinewebfonts.com/c/f2b7e336579d479bbc08c90df2dc67ed?family=HelveticaNeueW01-87HvCnObl" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" href="./css/bootstrap.min.css")
+    link(href="./css/styles.css", rel="stylesheet")
+    script(src="./js/jquery.js")
+    script(src="./js/bootstrap.min.js")
+
+  body
+
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-purple
+      a.navbar-brand(href="/")
+        strong Clean Updates
+
+      button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+
+      div#main-menu.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item(class=(name === "index" ? "active-link" : undefined))
+            a.nav-link(href="/") Home
+          li.nav-item(class=(name === "entertainment" ? "active-link" : undefined))
+            a.nav-link(href="/entertainment") Entertainment
+          li.nav-item(class=(name === "live-sports" ? "active-link" : undefined))
+            a.nav-link(href="/live-sports") Live Sports
+
+    main.container-fluid
+      block layout-content
+
+    footer#footer
+      div &copy; Copyright Clean Updates, 2022.
+

@@ -1,0 +1,12 @@
+extends layout
+
+block layout-content
+  h1 Live Matches
+
+  div.match
+    each m in matches.match
+      div.row.each-match
+        div.col-md-2.time-box #{m.time}
+        div.col-md-4.team-namex #{m.home_name}
+        div.col-md-2.score-box #{m.score}
+        div.col-md-4.team-name.right #{m.away_name}
